@@ -1,3 +1,4 @@
+{% capture ampm %}{{ site.time | date: "%p" )}}{% endcapture %}
 <div class="head">
   {% if page.title %}
   <div id="masthead">
@@ -7,7 +8,17 @@
   {% else %}
   <div id="masthead">
     <h1>{{ site.title }}</h1>
-    <h6 style="text-align:center">{{ site.description }}</h6>
+    <hr/>
+    <div>
+      <div style="margin-left: 50px; float:left; font-weight: bold;">{{ site.slogan }}</div>
+      {% if ampm == "PM" %}
+      <div style="margin-right: 50px; float:right;  font-weight: bold;">Afternoon Edition -- {{ site.time | | date: "%A, %B %-d, %Y"  }}</div>
+      {% else %}
+      <div style="margin-right: 50px; float:right;  font-weight: bold;">Morning Edition -- {{ site.time | | date: "%A, %B %-d, %Y"  }}</div>
+      {% endif %}
+      <div style="margin: 0 auto; width: 400px;text-align: center; font-weight: bold;">{{ site.description }}</div>
+    </hdiv4>
+    <hr/>
   </div>
   {% endif %}
 </div>

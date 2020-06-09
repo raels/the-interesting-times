@@ -11,6 +11,14 @@ Soldiers of my Old Guard: I bid you farewell. For twenty years I have constantly
 
 I have sacrificed all of my interests to those of the country.
 
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
 I go, but you, my friends, will continue to serve France. Her happiness was my only thought. It will still be the object of my wishes. Do not regret my fate; if I have consented to survive, it is to serve your glory. I intend to write the history of the great achievements we have performed together. Adieu, my friends. Would I could press you all to my heart.
 
 <!--more-->
